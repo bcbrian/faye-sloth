@@ -33,19 +33,19 @@ export function links() {
   ];
 }
 
-export const meta: MetaFunction = () => {
-  const description = `Code Sagas is a place to learn a million and one ways to code.`;
-  return {
-    description,
-    keywords: "code,sagas,learn",
-    "twitter:image": "https://codesagas.com/social.png",
-    "twitter:card": "summary_large_image",
-    "twitter:creator": "@codesagas",
-    "twitter:site": "@codesagas",
-    "twitter:title": "Code Sagas",
-    "twitter:description": description,
-  };
-};
+// export const meta: MetaFunction = () => {
+//   const description = `Code Sagas is a place to learn a million and one ways to code.`;
+//   return {
+//     description,
+//     keywords: "code,sagas,learn",
+//     "twitter:image": "https://codesagas.com/social.png",
+//     "twitter:card": "summary_large_image",
+//     "twitter:creator": "@codesagas",
+//     "twitter:site": "@codesagas",
+//     "twitter:title": "Code Sagas",
+//     "twitter:description": description,
+//   };
+// };
 
 interface DocumentProps {
   children: React.ReactNode;

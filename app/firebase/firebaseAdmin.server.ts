@@ -4,10 +4,10 @@ import { getFirestore, Firestore } from "firebase-admin/firestore";
 
 let app: App, auth: Auth, db: Firestore;
 if (!getApps().length) {
-//  if(process.env.NODE_ENV === "development") {
-//    process.env.FIRESTORE_EMULATOR_HOST = 'localhost:8080';
-//    process.env.FIREBASE_AUTH_EMULATOR_HOST="localhost:9099";
-//  }
+ if(process.env.NODE_ENV === "development") {
+   process.env.FIRESTORE_EMULATOR_HOST = 'localhost:8080';
+   process.env.FIREBASE_AUTH_EMULATOR_HOST="localhost:9099";
+ }
   const encodedKey = process.env.FIREBASE_PRIVATE_KEY_BASE64 || "";
   const decodedKey = Buffer.from(encodedKey, "base64").toString("utf8");
   app = initializeApp({

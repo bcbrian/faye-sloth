@@ -8,19 +8,19 @@ import {
 import { getAuth } from "~/firebase/firebaseAdmin.server";
 
 type LoginForm = {
-  username: string;
+  email: string;
   password: string;
 };
 
 export interface AuthUser extends DecodedIdToken {}
 
-export async function register({ username, password }: LoginForm) {
-  const user = await emailAndPasswordSignUp({ email: username, password });
+export async function register({ email, password }: LoginForm) {
+  const user = await emailAndPasswordSignUp({ email: email, password });
   return user;
 }
 
-export async function login({ username, password }: LoginForm): Promise<User> {
-  const user = await emailAndPasswordSignIn({ email: username, password });
+export async function login({ email, password }: LoginForm): Promise<User> {
+  const user = await emailAndPasswordSignIn({ email: email, password });
   return user;
 }
 

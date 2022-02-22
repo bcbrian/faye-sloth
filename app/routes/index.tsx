@@ -7,8 +7,8 @@ import { AppPaper } from "~/components/AppPaper";
 
 export const meta: MetaFunction = () => {
   return {
-    title: "Code Sagas: Copy/Pasta/Twerk",
-    description: "Codes Sagas a place to learn a million and one ways to code.",
+    title: "Faye Sloth",
+    description: "Watch ypur todo list get shorter.",
   };
 };
 

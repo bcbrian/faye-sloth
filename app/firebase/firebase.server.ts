@@ -21,10 +21,10 @@ if(!getApps().length) {
   app = initializeApp(firebaseConfig);
   auth = getAuth();
   db = getFirestore();
-//  if(process.env.NODE_ENV === "development") {
-//    connectFirestoreEmulator(db, 'localhost', 8080);
-//    connectAuthEmulator(auth, "http://localhost:9099");
-//  }
+ if(process.env.NODE_ENV === "development") {
+   connectFirestoreEmulator(db, 'localhost', 8080);
+   connectAuthEmulator(auth, "http://localhost:9099");
+ }
 }
 
 export { app, auth, db, getAuth, getFirestore };

@@ -23,7 +23,7 @@ export function AppBar() {
               textFillColor: "transparent",
             })}
           >
-            CODE SAGAS
+            FAYE SLOTH
           </Typography>
 
           <AuthControls />
